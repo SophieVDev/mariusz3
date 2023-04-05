@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<html lang="en">
+
+  <head>
+    <title>101125</title>
+    <style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+body {
+  background-color: #F1F1F0;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+th{
+  color:#ffffff;;
+  background:#660033;
+  border-bottom:4px solid #d1c1c6;
+  border-right: 1px solid #453439;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+th:first-child{
+  border-top-left-radius:3px;
+}
+th:last-child{
+  border-top-right-radius:3px;
+  border-right:none;
+}
+tr{
+  border-top: 1px solid #d1c1c6;
+  border-bottom: 1px solid #d1c1c6;
+  color:#660033;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+tr:hover td{
+  background:#703754;
+  color:#FFFFFF;
+  border-top: 1px solid #FFFFFF;
+}
+tr:first-child{
+  border-top:none;
+}
+tr:last-child{
+  border-bottom:none;
+}
+tr:nth-child(odd) td{
+  background:#eee9eb;
+}
+tr:nth-child(odd):hover td{
+  background:#703754;
+}
+tr:last-child td:first-child{
+  border-bottom-left-radius:3px;
+}
+tr:last-child td:last-child{
+  border-bottom-right-radius:3px;
+}
+td{
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #d1c1c6;
+}
+td:last-child{
+  border-right: 0px;
+}
+th.text-left{
+  text-align: left;
+}
+th.text-center{
+  text-align: center;
+}
+th.text-right{
+  text-align: right;
+}
+td.text-left{
+  text-align: left;
+}
+td.text-center{
+  text-align: center;
+}
+td.text-right{
+  text-align: right;
+}
+        </style>
+  </head>
+
+  <body translate="yes" onload="getLocation()">
+    <div id="page" style="display:none;">
+    <title>Table Style</title>
+    <div class="table-title">
+      <h3/>
+    </div>
+    <table class="table-fill">
+      <thead>
+        <tr>
+          <th class="text-center" colspan="2" id="text1">Nutritional Information</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        <tr>
+          <td id="text2" >Energie, Règlement UE N° 1169/2011 (kcal/100g)</td>
+          <td>90 kcal</td>
+        </tr>
+        <tr>
+          <td id="text3" >Energie, Règlement UE N° 1169/2011 (kj/100g)</td>
+          <td>376 kj</td>
+        </tr>
+        <tr>
+          <td id="text4">Protéines, N x 6,25 (g/100g)</td>
+          <td>0,07 g</td>
+        </tr>
+        <tr>
+          <td id="text5">Glucides (g/100g)</td>
+          <td>2,63 g</td>
+        </tr>
+        <tr>
+          <td id="text6">Lipides (g/100g)</td>
+          <td>0 g</td>
+        </tr>
+        <tr>
+          <td id="text7">Sucres (g/100g)</td>
+          <td>0,62 g</td>
+        </tr>
+        <tr>
+          <td id="text8">Acide Gras saturés (g/100g)</td>
+          <td>0 g</td>
+        </tr>
+        <tr>
+          <td id="text9">Sel chlorure de sodium (g/100g)</td>
+          <td>0,0025 g</td>
+        </tr>
+      </tbody>
+    </table>
+    <title>Table Style</title>
+    <div class="table-title">
+      <h3/>
+    </div>
+    <table class="table-fill">
+      <thead>
+        <tr>
+          <th  class="text-center" colspan="2"> <span id="text10">Etiquette</span>Château Vinoscore - 2023</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-center"> <span id="text11">Eau, Protéines, Glucides, Alcool,Sels minéraux, Vitamines Oligo-éléments, Polyphénols, Acides minéraux.  </span>                     
+            <br/>
+            <br/>
+            <br/>
+            <a class="text-center" href="https://vinoscore.net/">https://vinoscore.net/</a>
+          </td>         
+          </tr>  
+        
+      </tbody>
+    </table>
+  </div>
+    <script src="script.js"></script> 
+    </body>    
+    </html>
+
+
